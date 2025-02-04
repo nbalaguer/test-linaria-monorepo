@@ -19,4 +19,98 @@
   --pls-color-secondary-80: #323639;
   --pls-color-secondary-90: #232729;
   --pls-color-secondary-100: #131516;
+  --pls-text-10: 0.5rem;
+  --pls-text-20: 0.625rem;
+  --pls-text-30: 0.75rem;
+  --pls-text-40: 0.875rem;
+  --pls-text-50: 1rem;
+  --pls-text-60: 1.125rem;
+  --pls-text-70: 1.25rem;
+  --pls-text-80: 1.5rem;
+  --pls-text-90: 1.75rem;
+  --pls-text-100: 2rem;
+  --pls-text-110: 2.25rem;
+  --pls-text-120: 2.5rem;
+  --pls-text-130: 3rem;
+  --pls-text-140: 3.5rem;
+  --pls-text-150: 4rem;
+  --pls-text-160: 4.5rem;
+  --pls-text-170: 5rem;
+  --pls-text-180: 6rem;
+  --pls-text-190: 7rem;
+  --pls-text-regular: 400;
+  --pls-text-medium: 500;
+  --pls-text-semiBold: 600;
+  --pls-text-bold: 700;
+  --pls-text-narrowest: -0.04em;
+  --pls-text-narrow: -0.02em;
+  --pls-text-normal: 0em;
+  --pls-text-wide: 0.02em;
+  --pls-text-widest: 0.04em;
+  --pls-text-height-10: 130%;
+  --pls-text-height-20: 130%;
+  --pls-text-height-30: 130%;
+  --pls-text-height-40: 140%;
+  --pls-text-height-50: 150%;
+  --pls-text-height-60: 160%;
+  --pls-text-height-70: 170%;
+  --pls-text-height-80: 180%;
+  --pls-text-height-90: 190%;
+  --pls-text-height-100: 200%;
+
+  .pls-title-10 {
+        font-weight: var(--pls-text-bold);
+    letter-spacing: var(--pls-text-normal);
+    line-height: var(--pls-text-height-20);
+    font-size: var(--pls-text-100);
+  }
+
+  @media (min-width: 768px) {
+    .pls-title-10 {
+          font-size: var(--pls-text-130);
+    }
+  }
+
+
+  .pls-title-20 {
+        font-weight: var(--pls-text-bold);
+    letter-spacing: var(--pls-text-normal);
+    line-height: var(--pls-text-height-20);
+    font-size: var(--pls-text-90);
+  }
+
+  @media (min-width: 768px) {
+    .pls-title-20 {
+          font-size: var(--pls-text-120);
+    }
+  }
+
+
+  .pls-body-10 {
+        font-weight: var(--pls-text-regular);
+    letter-spacing: var(--pls-text-normal);
+    line-height: var(--pls-text-height-50);
+    font-size: var(--pls-text-40);
+  }
+
+  @media (min-width: 768px) {
+    .pls-body-10 {
+          font-size: var(--pls-text-50);
+    }
+  }
+
+
+  .pls-body-20 {
+        font-weight: var(--pls-text-regular);
+    letter-spacing: var(--pls-text-normal);
+    line-height: var(--pls-text-height-60);
+    font-size: var(--pls-text-30);
+  }
+
+  @media (min-width: 768px) {
+    .pls-body-20 {
+          font-size: var(--pls-text-40);
+    }
+  }
+
 }

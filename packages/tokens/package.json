@@ -32,5 +32,8 @@
   "files": [
     "README.md",
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  }
 }
