@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@acme/ui/button";
+import { Button } from "@acme/ui";
+import "@acme/tokens/theme.css";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -7,6 +8,10 @@ const meta: Meta<typeof Button> = {
     type: {
       control: { type: "radio" },
       options: ["button", "submit", "reset"],
+    },
+    variant: {
+      control: { type: "select" },
+      options: ["primary", "secondary"],
     },
   },
 };
@@ -36,11 +41,6 @@ export const Primary: Story = {
   args: {
     children: "Hello",
     type: "button",
-    style: {
-      color: "blue",
-      border: "1px solid gray",
-      padding: 10,
-      borderRadius: 10,
-    },
+    variant: "primary",
   },
 };
