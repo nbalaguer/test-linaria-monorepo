@@ -8,7 +8,10 @@ import dts from "vite-plugin-dts"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    dts(),
+    dts({
+      include: ['src/**/*.ts', 'src/**/*.tsx', "node_modules/@acme/tokens/src/**/*.ts", "node_modules/@acme/tokens/src/**/*.tsx"],
+      exclude: [],
+    }),
     wyw({
       include: ['**/*.{ts,tsx}'],
       babelOptions: {
