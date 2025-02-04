@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "@acme/ui";
+import "@acme/tokens/theme.css";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -41,11 +42,5 @@ export const Primary: Story = {
     children: "Hello",
     type: "button",
     variant: "primary",
-    style: {
-      color: "blue",
-      border: "1px solid gray",
-      padding: 10,
-      borderRadius: 10,
-    },
   },
 };
